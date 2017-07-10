@@ -1,6 +1,8 @@
 var express = require('express');
 var server = express();
-var jj = {
+var port = process.env.PORT || 8899
+var jj = "scripts": {
+  "start": "node index.js"
   "full-name": "Jose Julio Figueiredo Junior",
   "description": "He THE guy!",
   "pets": [
@@ -19,7 +21,6 @@ var jj = {
   }
 };
 
-
 server.get('/', function (request, response) {
   response.send("Go to /jj to find out more about me");
 });
@@ -34,4 +35,4 @@ server.get('*', function (request, response) {
   response.send("ERROR!!");
 });
 
-server.listen(8899);
+server.listen(port);
