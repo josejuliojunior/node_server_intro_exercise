@@ -1,8 +1,7 @@
 var express = require('express');
 var server = express();
-var port = process.env.PORT || 8899
-var jj = "scripts": {
-  "start": "node index.js"
+var port = process.env.PORT || 8899;
+var jj = {
   "full-name": "Jose Julio Figueiredo Junior",
   "description": "He THE guy!",
   "pets": [
